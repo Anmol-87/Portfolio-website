@@ -200,7 +200,7 @@ const Contact = () => {
               </div>
               <div>
                 <p className="text-white/70 text-sm">{contact.label}</p>
-                <p className="font-semibold">{contact.value}</p>
+                <p className="font-semibold break-words">{contact.value}</p>
               </div>
             </a>
           );

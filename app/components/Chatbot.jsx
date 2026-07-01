@@ -130,7 +130,7 @@ export default function Chatbot() {
 
       {/* Chat Window */}
       {open && (
-        <div className="fixed bottom-24 right-6 w-96 h-[580px] bg-black/95 backdrop-blur-xl rounded-2xl shadow-2xl flex flex-col overflow-hidden z-50 border border-white/20 animate-slide-up">
+        <div className="fixed bottom-20 left-3 right-3 md:left-auto md:right-6 md:w-96 h-[75vh] md:h-[580px] bg-black/95 backdrop-blur-xl rounded-2xl shadow-2xl flex flex-col overflow-hidden z-50 border border-white/20 animate-slide-up">
           {/* Header */}
           <div className="bg-white/10 text-white p-4 flex justify-between items-center backdrop-blur-md border-b border-white/20">
             <div className="flex items-center gap-3">
@@ -139,10 +139,12 @@ export default function Chatbot() {
                 <div className="absolute -top-1 -right-1 w-2 h-2 bg-white rounded-full animate-pulse"></div>
               </div>
               <div>
-                <span className="font-bold text-lg text-white">
+                <span className="font-bold text-base md:text-lg text-white">
                   Anmol's AI Assistant
                 </span>
-                <p className="text-xs text-gray-300">Select a question below</p>
+                <p className="hidden md:block text-xs text-gray-300">
+                  Select a question below
+                </p>
               </div>
             </div>
             <button
@@ -176,7 +178,7 @@ export default function Chatbot() {
                   )}
                 </div>
                 <div
-                  className={`p-3 rounded-2xl max-w-[80%] ${
+                  className={`p-3 rounded-2xl max-w-[85%] md:max-w-[80%] ${
                     msg.sender === "user"
                       ? "bg-white text-black rounded-tr-none"
                       : "bg-gray-900/80 text-white rounded-tl-none border border-white/10"
@@ -193,7 +195,7 @@ export default function Chatbot() {
                 <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gray-800 border border-white/20 flex items-center justify-center">
                   <div className="w-3 h-3 bg-white rounded-full animate-pulse"></div>
                 </div>
-                <div className="p-3 rounded-2xl max-w-[70%] bg-gray-900/80 border border-white/10 rounded-tl-none">
+                <div className="p-3 rounded-2xl max-w-[85%] md:max-w-[70%] bg-gray-900/80 border border-white/10 rounded-tl-none">
                   <div className="flex items-center gap-3">
                     <div className="flex gap-1.5">
                       <div className="w-2 h-2 bg-white rounded-full animate-thinking"></div>
@@ -228,7 +230,7 @@ export default function Chatbot() {
               </span>
             </div>
 
-            <div className="grid grid-cols-2 gap-2 max-h-40 overflow-y-auto pr-2 scrollbar-thin">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-40 overflow-y-auto pr-2 scrollbar-thin">
               {faq.map((item, idx) => (
                 <button
                   key={idx}
@@ -245,8 +247,8 @@ export default function Chatbot() {
           </div>
 
           {/* Info Text */}
-          <div className="p-3 border-t border-white/20 bg-black/50">
-            <p className="text-xs text-center text-gray-400">
+          <div className="p-2 md:p-3 border-t border-white/20 bg-black/50">
+            <p className="text-[10px] md:text-xs text-center text-gray-400">
               💬 You can only select from questions above
             </p>
           </div>
