@@ -23,7 +23,11 @@ export const metadata: Metadata = {
 
   description:
     "Official portfolio of Anmol Chauhan, an IIT Madras Electronics student and Full Stack Developer. Explore my projects, technical skills, experience, and resume.",
+   verification: {
 
+    google: "S7idXu7wQS4R-8KDhun3uxE3mGJl9H68eyz4R5VpYYg",
+
+  },
   keywords: [
     "Anmol Chauhan",
     "Anmol Portfolio",
