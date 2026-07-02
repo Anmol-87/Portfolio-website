@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://your-domain.vercel.app"), // Replace with your real domain
 
   title: {
-    default: "Anmol Chauhan | Portfolio",
+    default: "Anmol | Portfolio",
     template: "%s | Anmol Chauhan",
   },
 
@@ -48,11 +48,11 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Anmol Chauhan | Portfolio",
+    title: "Anmol | Portfolio",
     description:
       "Explore the portfolio of Anmol Chauhan, featuring full-stack development projects, electronics engineering work, and technical skills.",
     url: "https://anmol-25.vercel.app",
-    siteName: "Anmol Chauhan Portfolio",
+    siteName: "Anmol Portfolio",
     locale: "en_US",
     type: "website",
     images: [
@@ -60,14 +60,14 @@ export const metadata: Metadata = {
         url: "/my-photo2.png",
         width: 1200,
         height: 630,
-        alt: "Anmol Chauhan Portfolio",
+        alt: "Anmol Portfolio",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Anmol Chauhan | Portfolio",
+    title: "Anmol | Portfolio",
     description:
       "Official portfolio of Anmol Chauhan - IIT Madras student, Full Stack Developer, and Electronics Engineer.",
     images: ["/og-image.png"],
