@@ -22,6 +22,22 @@ export default function Chatbot() {
         "I am Anmol's AI assistant 🤖 - designed to help you learn more about Anmol Chauhan's work and skills.",
     },
     {
+  question: "CV",
+  answer: (
+    <div className="space-y-3">
+      <p>You can download my latest CV below.</p>
+
+      <a
+        href="/CV.docx"
+        download
+        className="inline-block px-4 py-2 rounded-lg bg-white text-black font-semibold hover:bg-gray-200 transition"
+      >
+        📄 Download CV
+      </a>
+    </div>
+  ),
+},
+    {
       question: "How can I contact you?",
       answer:
         "You can contact Anmol via email at anmolkumarchauhan7717@gmail.com or connect on LinkedIn: https://www.linkedin.com/in/anmol-chauhan-7a1469328/",
